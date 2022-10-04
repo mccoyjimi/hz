@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hazenite - Ride for Life</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" 
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  </head>
+  <body onload="slider()">
+    <div class="banner">
+      <div class="slider">
+        <img src="/assets/images/sunset.jpg" id="slide_image" />
+      </div>
+      <div class="slider_overlay">
+        <div class="navbar">
+          <div class="logo">
+            <img src="/assets/images/logo-hazenite.png" alt="hazenite logo">
+          </div>
+          <div class="menu-icon">
+            <i class="fa fa-user " aria-hidden="true"></i>
+            <i class="fas fa-search"></i>
+            <i class="fa fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="content">
+          <h1>WELCOME TO HAZENITE</h1>
+          <h3>We Ride For Life</h3>
+          <div>
+            <button type="button">Sign-in</button>
+            <button type="button">Events</button>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      var slide_image= document.getElementById("slide_image");
+      var images = new Array(
+              "/assets/images/sunset.jpg",
+              "/assets/images/slide2.jpg",
+              "/assets/images/slide3.jpg",
+              "/assets/images/sunset.jpg"
+          );
+          var len = images.length;
+          var i = 0;
+
+          function slider(){
+            if(i > len-1){
+              i - 0;
+            }
+            slide_image.src = images[i];
+            i++;
+            setTimeout('slider()',4000);
+          }
+          
+    </script>
+  </body>
+</html>

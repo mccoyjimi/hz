@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hazenite - Ride for Life</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" 
   href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   </head>
   <body onload="slider()">
     <div class="banner">
-      <div class="slider">
-        <img src="/assets/images/sunset.jpg" id="slide_image" />
+       <div class="slider">&nbsp;</div>
       </div>
       <div class="slider_overlay">
         <div class="navbar">
@@ -37,26 +37,34 @@
         </div>
       </div>
     </div>
-    <script>
-      var slide_image= document.getElementById("slide_image");
-      var images = new Array(
-              "/assets/images/sunset.jpg",
-              "/assets/images/slide2.jpg",
-              "/assets/images/slide3.jpg",
-              "/assets/images/sunset.jpg"
-          );
-          var len = images.length;
-          var i = 0;
+  <main>
+<div class="w3-cell-row">
+  <div class="w3-container w3-red w3-cell w3-mobile">
+    <img src="/assets/images/bicycle-7-removebg-preview.png" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+  </div>
 
-          function slider(){
-            if(i > len-1){
-              i - 0;
-            }
-            slide_image.src = images[i];
-            i++;
-            setTimeout('slider()',4000);
-          }
-          
-    </script>
+  <div class="w3-container w3-green w3-cell w3-mobile">
+    <img src="/assets/images/bicycle-5-removebg-preview.png" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+
+  <div class="w3-container w3-blue w3-cell w3-mobile">
+    <img src="/assets/images/bicycle-3-removebg-preview.png" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+
+  </main> 
   </body>
 </html>

@@ -24,6 +24,9 @@
   background-image: var(--current-bg);
   animation: changeImage 50s linear infinite;
 }
+.header {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
 
 /* Animate using css custom properties */
 @keyframes changeImage {
@@ -116,7 +119,6 @@ button:hover {
   background: transparent;
   border: 2px solid #35bda3;
 }
-
 /*PRODUCTS*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -151,4 +153,7 @@ button:hover {
   width: 100%;
   padding: 78px 120px;
   background: rgb(252, 252, 255);
+}
+.call_to_action {
+  text-align: center;
 }

@@ -28,27 +28,6 @@
   background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
-/* Animate using css custom properties */
-@keyframes changeImage {
-  0% {
-    --current-bg: var(--bg1);
-  }
-  20% {
-    --current-bg: var(--bg2);
-  }
-  40% {
-    --current-bg: var(--bg3);
-  }
-  60% {
-    --current-bg: var(--bg1);
-  }
-  80% {
-    --current-bg: var(--bg2);
-  }
-  100% {
-    --current-bg: var(--bg3);
-  }
-}
 .slider_overlay {
   width: 100%;
   height: 100vh;
@@ -156,4 +135,150 @@ button:hover {
 }
 .call_to_action {
   text-align: center;
+}
+footer {
+  background-color: #041e2b;
+  width: 100vw;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 100px;
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+
+.logo-details * {
+  font-size: x-large;
+  color: white;
+}
+.logo-details #bike {
+  color: #a70f0f;
+  --fa-animation-duration: 5s;
+}
+
+.media-icons a {
+  color: white;
+  padding-left: 5px;
+}
+
+.media-icons a .fab {
+  display: inline-block;
+  border-radius: 100px;
+  /* box-shadow: 0 0 2px; */
+  padding: 0.5em 0.6em;
+}
+
+.media-icons a:nth-child(1) .fab {
+  background-color: #3944f7;
+}
+
+.media-icons a:nth-child(2) .fab {
+  background-color: #12b0e8;
+}
+
+.media-icons a:nth-child(3) .fab {
+  background-color: #e6425e;
+}
+
+.media-icons a:nth-child(4) .fab {
+  background-color: #3944f7;
+}
+
+.media-icons a:nth-child(5) .fab {
+  background-color: #e21717;
+}
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px;
+  padding: 20px 0px;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0px;
+  color: white;
+}
+
+.link_name {
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+footer a:hover {
+  color: #12b0e8;
+  transition: 0.3s ease-out;
+}
+
+.box.input-box .link_name + li input {
+  padding: 5px;
+  border: 2px solid #cad5e2;
+  border-radius: 3px;
+  background-color: #0eafbb;
+}
+
+::placeholder {
+  color: #cad5e2;
+}
+
+input[type="text"] {
+  color: white;
+}
+
+.box.input-box li:last-child input {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #cad5e2;
+  color: #1c1563;
+  width: 100%;
+  font-weight: bold;
+}
+
+.box.input-box li:last-child input:hover {
+  cursor: pointer;
+  background-color: #8dbdf3;
+}
+
+.bottom_text {
+  background-color: #021a22;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.bottom_text span {
+  margin: 0px 100px;
+  color: white;
+  font-size: small;
+}
+/* Animate using css custom properties */
+@keyframes changeImage {
+  0% {
+    --current-bg: var(--bg1);
+  }
+  20% {
+    --current-bg: var(--bg2);
+  }
+  40% {
+    --current-bg: var(--bg3);
+  }
+  60% {
+    --current-bg: var(--bg1);
+  }
+  80% {
+    --current-bg: var(--bg2);
+  }
+  100% {
+    --current-bg: var(--bg3);
+  }
 }

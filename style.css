@@ -15,12 +15,11 @@
   height: 100vh;
   width: 100%;
   background-size: cover;
-
   --bg1: url("./assets/images/sunset.jpg");
   --bg2: url("./assets/images/slide2.jpg");
   --bg3: url("./assets/images/slide3.jpg");
-  /*--bg4: url("https://images.unsplash.com/photo-1490462686240-04979237c723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");
-  --bg5: url("https://images.unsplash.com/photo-1571147558584-8490ea37d7a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");*/
+  --bg4: url("https://images.unsplash.com/photo-1490462686240-04979237c723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");
+  --bg5: url("https://images.unsplash.com/photo-1571147558584-8490ea37d7a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");
 
   --current-bg: var(--bg1);
   background-image: var(--current-bg);
@@ -147,6 +146,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 }
 .item_header {
   width: 100%;
@@ -177,6 +177,10 @@ section {
   padding: 20px 20px 40px;
   border-radius: 10px;
   transition: 0.4s;
+}
+.item_image:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .image {
   width: 50%;
@@ -209,6 +213,25 @@ section {
 .stars {
   font-size: 1.2em;
   color: rgb(150, 129, 14);
+}
+.buy {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.buy button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: dodgerblue;
+  color: navy;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buy button:hover {
+  transform: scale(1.1);
 }
 .w3-cell-row {
   width: 100%;

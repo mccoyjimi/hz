@@ -108,7 +108,7 @@ button:hover {
   font-family: arial;
 }
 
-.price {
+/*.price {
   color: grey;
   font-size: 22px;
 }
@@ -127,9 +127,9 @@ button:hover {
 
 .card button:hover {
   opacity: 0.7;
-}
+}*/
 
-/* SECTION */
+/* SECTION
 section {
   background: grey;
   color: rgb(5, 5, 12);
@@ -138,7 +138,7 @@ section {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}
+} */
 
 .card_container {
   width: 80vh;
@@ -147,6 +147,9 @@ section {
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+  background: grey;
+  color: rgb(5, 5, 12);
+  font-family: "Raleway", sans-serif;
 }
 .item_header {
   width: 100%;
@@ -233,14 +236,14 @@ section {
 .buy button:hover {
   transform: scale(1.1);
 }
-.w3-cell-row {
+/*.w3-cell-row {
   width: 100%;
   padding: 78px 120px;
   background: rgb(252, 252, 255);
 }
 .call_to_action {
   text-align: center;
-}
+}*/
 footer {
   background-color: #041e2b;
   width: 100vw;
